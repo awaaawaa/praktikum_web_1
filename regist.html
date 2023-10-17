@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Form Registrasi</title>
+    </head>
+    <body>
+        <h2 style="text-align":center;"> Registrasi Praktikum</h2>
+        
+        <form action="admin.html" method="POST">
+            <fieldset>
+               <legend><b>Daftar Praktikum</b></legend>
+             <label for="">Nama : </label>
+             <input name="nama" placeholder="masukan nama anda" type="text">
+             <br>
+             <br>
+             <label for="password">password</label>
+             <input type="password" placeholder="masukan password anda">
+             <br>
+             <br>
+             <label for="jk">Jenis Kelamin :</label>
+             <input type="radio" value="L" name="jk" for="jk">
+             <label for="jk">laki-laki</label>
+             
+             <input type="radio" value="P" name="jk" for="jk">
+              <label for="jk">perempuan</label>
+              <br>
+              <br>
+              <label for="">Foto:</label>
+              <input type="file">
+              <br>
+              <br>
+              <input type="submit" value="simpan" name="simpan" id="simpan">
+            <fieldset>
+            
+        </form>
+    </body>
+</html>
