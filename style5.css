@@ -1,0 +1,40 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+img {
+    height: 25vh;
+}
+body {
+    background-color: rgb(250, 165, 179);
+    text-align: center;
+}
+header, footer {
+    background-color: rgba(130, 222, 208, 0.895);
+    height: 10vh;
+    line-height: 10vh;
+    margin: 20px;
+}
+main {
+    height: 70vh;
+    margin: 0 20px;
+    display: flex;
+}
+aside {
+    background-color: rgba(58, 173, 156, 0.872);;
+    flex: 1;
+    margin-right: 20px;
+}
+article {
+    background-color: rgba(224, 93, 104, 0.692);
+    flex: 3;
+    text-align: center;
+}
+article .text {
+    height: 37vh;
+}
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}

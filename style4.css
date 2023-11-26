@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+header, footer {
+    background-color: rgba(240, 210, 112, 0.735);
+    height: 15vh;
+}
+main {
+    display: flex;
+    height: 70vh;
+}
+article {
+    background-color: aliceblue;
+    flex: 2;
+}
+aside {
+    background-color: aqua;
+    flex: 1;
+}
+nav {
+    background-color: pink;
+    float: left;
+    width: 14vw;
+    height: 100vh;
+}
