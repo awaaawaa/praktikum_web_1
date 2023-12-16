@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurs Rupiah ke Dollar</title>
+  <script>
+    function konversiRupiahKeDollar() {
+      var jumlahRupiah = parseFloat(document.getElementById('jumlahRupiah').value);
+      var kursDollar = 14650;
+      var nilaiDollar = jumlahRupiah / kursDollar;
+
+      // Menampilkan hasil 
+      document.getElementById('hasilKonversi').innerHTML = "Nilai dalam Dollar: $" + nilaiDollar.toFixed(2);
+    }
+  </script>
+</head>
+<body>
+  <h2>Kurs Rupiah ke Dollar</h2>
+  
+  <label for="jumlahRupiah">Masukkan jumlah uang Rupiah:</label>
+  <input type="number" id="jumlahRupiah" placeholder="Masukkan jumlah uang Rupiah">
+
+  <button onclick="konversiRupiahKeDollar()">Konversi</button>
+
+  <p id="hasilKonversi"></p>
+</body>
+</html>
