@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="bil1" value="" placeholder="0">
+    <br>
+    <b>+</b>
+    <br>
+    <input type="number" id="bil2" value="" placeholder="0">
+    <br>
+    <b>=</b>
+    <br>
+    <input type="number" id="bil3" disabled>
+    <br>
+    <br>
+    <button onclick="hitung()">Hitung</button>
+</body>
+<script>
+    function hitung(){
+        let bilangan1 = Number(document.getElementById("bil1").value);
+        let bilangan2 = Number(document.getElementById("bil2").value);
+        console.log(typeof(bilangan1))
+        let hasil = bilangan1 + bilangan2;
+        document.getElementById('bil3').value = hasil;
+
+    }
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+    #container{
+        text-align: center;
+        background-color: white;
+    }
+    #btn1{
+        background-color: rgb(65, 159, 217);
+    }
+    #btn2{
+        background-color: rgb(142, 235, 80);
+    }
+    body{
+        background-image: url(mark\ lee.jpg);
+    }
+</style>
+<body>
+    <div id="container">
+    <h2>Mau Jadi Cowoku Ga Mark?</h2>
+    <h3 id="jawab">Jawaban</h3>
+    <button id="btn1" type="button" onclick='document.getElementById("jawab")
+    .innerHTML = "bolehhh"'>Terima</button>
+    <button id="btn2" type="button" onclick='document.getElementById("jawab")
+    .innerHTML = "Harus Mau"'>Ga Dulu</button>
+
+
+    </div>
+</body>
+</html>
