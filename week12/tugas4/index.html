@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NCT Dream</title>
+</head>
+<body>
+    <h1>NCT Dream</h1>
+    <label for="imageDropdown">Pilih Member:</label>
+    <!-- isi alert -->
+    <select id="imageDropdown" onchange="showImageAndAlert()">
+        <option value="images/image1.jpg" data-caption="Namanya Mark Lee, diatuh cakepp bangett!!!! 
+dia lagi duduk biasa aja cakepnya ga ketulungan, gimana jadi pacarku coba snhvbfudvbjd
+dia tuhh ya sangat sangattt word of affirmation bangetttt!!!!
+dia tuh multitalent bangett semuanyaaa bisaaa, tapi ada satu hal yang dia gabisa, gabisa jadi pacarkuu huhuhuhuhu.
+btw dia tuh member paling tua sekaligus leader di NCT Dream 
+ohh iyaa dia tuh sekarang umurnya 24 tahunn tapiii mukanya masi lucuuuu bangettt!!!, tinggi dia tuh 175 cm cocok banget sama aku yang tingginya 155 cm wkwkwkwkwk
+ohh iyaa dia juga lahir di Toronto, kanada.">Mark</option>
+                <option value="images/image2.jpg" data-caption="Namanya Huáng Rénjùn, liat deh diatuhh ga kalah cakep sama yang lainn, diatuh kaya punya ciri khasnya tersendiri gituuu
+sumpahh dia cakepp bangettt parahhh!!!!
+diatuhh yaa cantik bisa ganteng juga bisaa 
+terus juga diatuh kesabaranya luasss bangett
+seluas samudra wkwkwkwk
+ohh iyaa umur dia sekarang tuh 23 tahun, tingginya 171cm, dia lahir di Jilin, Tiongkok. ">Renjun</option>
+                <option value="images/image3.jpg" data-caption="Namanya Lee Je-no, diatuhh superrr duperr gemesinnn julukanya aja samoyed masaa 
+gimana ga gemess cobaaa!!
+teruss yaa diatuhh kalo ngambek lucuuu bangetttt!!!
+diaa juga kalo senyum matanya merem gituu kaya gini ( .◜‿◝ )
+gemesss bangetttt pokonyaaa!!!
+tapii walaupun gemes gemes ginii dia juga bisa jadi captain kalo mark gaada
+dia juga tipe yang gabisa marah, dia kalo lagi marah sama orang tuh bakal nangiss
+ohhh iyaa diatuh sekarang umurnya 23 tahunn,tinginya 177cm, dia lahir di Incheon, Korea Selatan.">Jeno</option>
+                <option value="images/image4.jpg" data-caption="Namanya Lee Dong-hyuck biasanya dipanggil Haechan, diatuhhh masyaallah cakeppp bangettt sumpahh!!!!
+dia tuhh ya tengil bangett anaknya, tapi sayangnya cakeppp bangett!!!
+dia jugaa punya suara yang khasss bangetttt, cocok banget diajak call apalagi kalo dinyanyiin sampe tidurr
+julukan diatuh fullsun karnaa diaa tuhh mood booster bangett, ibaratnya tuhh ya kalo lagi nongkrong gaada dia bawaanya sepiii bangett, dan dia juga siap menabur kehangatann buat sijeuni
+dia jugaa suka disebut aa bandung, gimana ga disebut aa bandung cobaaa fotonya ajaa kaya ginii melokal bangett masaa bdysdbcjvwyd
+ohh iyaa diatuh umurnya sekarang 23 sama kaya jenoo, tingginya 174 cm, dia lahir di Seoul, Korea Selatan.">Haechan</option>
+                <option value="images/image5.jpg" data-caption="yang inii Namanya Na Jae-min, biasanya dipanggil nanaaaa
+dia tuhhh lucuu pake bangetttt!!!!
+paling gemesin pluss paling maniss seduniaaaa!!!!!
+diatuh yaa sweet bangett anaknyaa, dia sangat mendukung perhaluan
+dia jugaa selalu merhatiin hal hal kecilll, pokoknya act of service bangettt!!!
+diaa jugaa tipe yang misterius gituu, mood nya gabisa ditebak, kadang kalo lagi diemm, diemm bangett tapi kalo lagi aktif, aktif bangett.
+ohh iyaa diatuhh umurnya sekarang 23 tahun sama kaya jenoo dan hecann, tingginya 177 cm sama kaya jenoo, dia lahir di Jeonju, Korea Selatan.">Jaemin</option>
+                <option value="images/image6.jpg" data-caption="inii Namanya Zhong Chenle, dia biasanya dipanggil chenle
+dia tuhh gemesinnnn!!!!
+diaa jugaa punya suara yang khass bangetttt
+btw dia juga kaya dari lahirrr soalnya dia gatau sewa rumahh bahasa lokalnya ngontrak, jadi dia kalo mau tinggal tuh beli rumahh, teruss dia juga suka traktir member yang lain
+Chenle nih ya tipe yang paling enak dijadiin pasangan atau pun temen karna dia gaa ragu-raguu kalau mau bilang apa-apaa dan diatuhh gaa ragu-raguu kalo ngeluarin uang buat orang tersayang
+dia juga tipe yang tegas dan jujur.
+ohh iyaa diatuhh umurnya sekarang 22 tahun, tingginya 178 cm, dia lahir di Shanghai, Tiongkok.">Chenle</option>
+                <option value="images/image7.jpg" data-caption="yang terakhir Namanya Park Jisung, biasanya dipanggil jisung,icung,endy
+diatuhh yaa paling muda di NCT Dream
+dia juga tipe yang gampang penasarann, kaya bocil yang pengen tauu segalaa halll
+diatuhhh lucuu bangtttt pluss cakepppp!!!
+teruss jugaa poloss bangettt.
+ohh iyaa diatuhh umurnya sekarang 21 tahun, tingginya 108 cm tingi bangett kan padahal dia maknae, dia lahir di Seoul, Korea Selatan.">Jisung</option>
+                
+    </select>
+
+    <div id="imageContainer">
+        <img id="selectedImage" src="images/image1.jpg" alt="Selected Image">
+    </div>
+
+    <!-- Container untuk menampilkan teks alert -->
+    <div id="alertContainer" class="hidden">
+        <div id="alertText"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validasi</title>
+</head>
+<body>
+    <h1>Form Validasi</h1>
+<!-- isi form -->
+    <form id="myForm" onsubmit="validateForm(); return false;">
+        <label for="nama">Nama Pelanggan:</label>
+        <input type="text" id="nama" name="nama" maxlength="30" required>
+        <span id="namaError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+
+        <label for="jam">Jam Keberangkatan:</label>
+        <input type="text" id="jam" name="jam" pattern="(?:[01]\d|2[0-3])\.[0-5]\d" required>
+        <span id="jamError" class="error"></span>
+
+        <label for="tujuan">Tujuan Keberangkatan:</label>
+        <input type="text" id="tujuan" name="tujuan" required>
+        <span id="tujuanError" class="error"></span>
+
+        <label for="jumlah">Jumlah Tiket:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" max="10" required>
+        <span id="jumlahError" class="error"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" style="display:none;">
+        <h2>Hasil Validasi</h2>
+        <p id="resultNama"></p>
+        <p id="resultEmail"></p>
+        <p id="resultJam"></p>
+        <p id="resultTujuan"></p>
+        <p id="resultJumlah"></p>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
